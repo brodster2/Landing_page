@@ -1,0 +1,114 @@
+/*Feature image with fixed size*/
+.jumbotron {
+    background: url(images/jumbotron_bg.jpg) center center;
+    background-size: cover;
+    height: 700px;
+}
+
+/*Logo image in jumbotron*/
+.logo {
+    height: 75px;
+    width: 75px;
+    margin: 5px 0px 0px 30px;
+}
+
+.featured {
+    color: white;
+    padding-top: 60px;
+}
+
+.featured .btn-default {
+    font-weight: bold;
+    color: white;
+    background-color: rgba(2, 106, 129, 0.5);
+    width: 160px;
+    margin-top: 50px;
+    margin-left: 40px;
+    -webkit-transition: font-weight 1s;
+    -moz-transition: font-weight 1s;
+    -o-transition: font-weight 1s;
+    transition: font-weight 1s;
+}
+
+.featured .btn-default:hover {
+    font-weight: normal;
+    background-color: rgb(2, 106, 129);
+}
+
+.trial {
+    text-align: center;
+}
+
+.trial img {
+    width: 320px;
+    height: 150px;
+    margin: 20px;
+}
+
+
+/*Device width: 480px - 768px*/
+@media(min-width: 480px) and (max-width: 768px) {
+    
+    .jumbotron {
+        height: 410px;
+    }
+    
+    .logo-wrapper {
+        text-align: center;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .featured {
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    .featured .btn-default {
+        margin: 15px;
+    }
+    
+    .featured p, .featured a {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 480px) {
+        
+    .jumbotron {
+        height: 410px;
+    }
+    
+    .logo-wrapper {
+        text-align: center;
+    }
+    
+    .logo {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+    }
+    
+    .featured {
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .featured .btn-default {
+        margin: 18px auto 0px auto;
+        font-size: 16px;
+        display: block;
+    }
+    
+    .featured p {
+        font-size: 16px;
+    }
+    
+    .trial img {
+        width: 250px;
+        margin: 10px;
+    }
+}
